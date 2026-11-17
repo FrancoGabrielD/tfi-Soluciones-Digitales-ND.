@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotizador Online | ViedmaTech</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">ViedmaTech_</a>
+      <button id="menu-btn" class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equipo.html">El Equipo</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="trabajos.html">Trabajos</a></li>
+        <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Calcula el costo de tu <span class="gradient-text">Proyecto Digital</span></h1>
+      <p style="color:#94a3b8; margin-bottom:2rem;">Selecciona las características de tu software para obtener una estimación inmediata en tiempo real.</p>
+
+      <div class="contacto-layout">
+        <div class="card">
+          <h3>1. Configuración del Software</h3>
+          
+          <div class="form-group">
+            <label for="tipo-proyecto">Tipo de solución principal</label>
+            <select id="tipo-proyecto" class="select-dark">
+              <option value="500">Sitio Web Corporativo ($500 USD)</option>
+              <option value="1200">Tienda E-Commerce Completa ($1.200 USD)</option>
+              <option value="2000">Aplicación Móvil Android / iOS ($2.000 USD)</option>
+              <option value="1600">Sistema Web / Dashboard a Medida ($1.600 USD)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>2. Módulos y funcionalidades extra</label>
+            <div class="checkbox-list">
+              <label class="check-item">
+                <input type="checkbox" class="extra-check" value="250"> Diseño UX/UI Personalizado (+$250)
+              </label>
+              <label class="check-item">
+                <input type="checkbox" class="extra-check" value="300"> Integración con Pasarela de Pagos (+$300)
+              </label>
+              <label class="check-item">
+                <input type="checkbox" class="extra-check" value="200"> Panel de Administración de Contenidos (+$200)
+              </label>
+              <label class="check-item">
+                <input type="checkbox" class="extra-check" value="150"> Optimización SEO Avanzada y Analíticas (+$150)
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="urgencia">3. Plazo de entrega</label>
+            <select id="urgencia" class="select-dark">
+              <option value="1">Estándar: 4 a 6 semanas (Sin recargo)</option>
+              <option value="1.25">Prioritario: 2 a 3 semanas (+25%)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <span class="badge">Estimación en Vivo</span>
+            <h3>Resumen de Inversión</h3>
+            <p style="margin-bottom:1.5rem;">Este cálculo incluye desarrollo, pruebas de calidad y despliegue inicial en la nube.</p>
+            
+            <div class="precio-box">
+              <span style="color:#94a3b8; font-size:0.9rem;">Inversión estimada total:</span>
+              <div id="precio-total" class="precio-numero">$500 USD</div>
+              <small id="detalle-plazo" style="color:#38bdf8;">Tiempo estimado: 4 a 6 semanas</small>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem;">
+            <a href="contacto.html" class="btn" style="width:100%; text-align:center;">Agendar reunión con este presupuesto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ViedmaTech Software Studio. Todos los derechos reservados.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

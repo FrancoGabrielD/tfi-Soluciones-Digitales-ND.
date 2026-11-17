@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Soluciones Digitales ND </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Soluciones Digitales ND </a>
+      <button id="menu-btn" class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equipo.html">El Equipo</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="trabajos.html">Trabajos</a></li>
+        <li><a href="presupuesto.html">Presupuesto</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Hablemos de tu <span class="gradient-text">Próximo Proyecto</span></h1>
+      <div class="contacto-layout">
+        <div class="card">
+          <h3>Información de Contacto</h3>
+          <p><strong>Dirección:</strong> Av. Alem 450, Bahia Blanca, Buenos Aires, Argentina</p>
+          <p><strong>Teléfono:</strong> +54 9 2920 55-1234</p>
+          <p><strong>Email:</strong> nd.solucionesdigitales@gmail.com</p>
+          <p style="margin-top:0.8rem;">
+            <strong>Redes:</strong> 
+            <a href="#github" style="color:#38bdf8;">GitHub</a> · 
+            <a href="#linkedin" style="color:#38bdf8;">LinkedIn</a> · 
+            <a href="#instagram" style="color:#38bdf8;">Instagram</a>
+          </p>
+          <div class="mapa-placeholder">
+            <strong style="color:#38bdf8;">📍 Ubicación: Bahia Blanca, Buenos Aires</strong>
+            <span>Av. Alem 450 (Coordenadas: -40.8135, -62.9967)</span>
+            <small style="margin-top:0.5rem;">Puedes incrustar aquí el &lt;iframe&gt; de Google Maps al publicar en línea.</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Envianos tu consulta</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required placeholder="juan@empresa.com">
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <input type="text" id="asunto" name="asunto" required placeholder="Presupuesto Desarrollo Web">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Contanos brevemente sobre tu proyecto..."></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar mensaje</button>
+            <p id="form-feedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Soluciones Digitales ND Software Studio. Todos los derechos reservados.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabajos y Clientes | Soluciones Digitales ND </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Soluciones Digitales ND </a>
+      <button id="menu-btn" class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equipo.html">El Equipo</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="trabajos.html" class="active">Trabajos</a></li>
+        <li><a href="presupuesto.html">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Portafolio de <span class="gradient-text">Proyectos</span></h1>
+      <p style="color:#94a3b8; margin-bottom:1.5rem;">Filtra nuestros trabajos por categoría tecnológica:</p>
+
+      <div class="filtros">
+        <button class="filtro-btn active" data-filter="todos">Todos (6)</button>
+        <button class="filtro-btn" data-filter="web">Desarrollo Web</button>
+        <button class="filtro-btn" data-filter="mobile">Apps Móviles</button>
+        <button class="filtro-btn" data-filter="cloud">Sistemas Cloud</button>
+      </div>
+
+      <div class="grid-proyectos">
+        <article class="card proyecto-card" data-category="web">
+          <span class="badge">Desarrollo Web</span>
+          <h3>FinTech Sur</h3>
+          <p>Plataforma web financiera con gráficos en tiempo real y autenticación segura.</p>
+        </article>
+
+        <article class="card proyecto-card" data-category="mobile">
+          <span class="badge">App Móvil</span>
+          <h3>SaludConectada</h3>
+          <p>Aplicación móvil para reserva de turnos médicos y recetas digitales.</p>
+        </article>
+
+        <article class="card proyecto-card" data-category="web">
+          <span class="badge">Desarrollo Web</span>
+          <h3>Tienda Bonaerense B2B</h3>
+          <p>Comercio electrónico mayorista con cálculo automático de envíos nacionales.</p>
+        </article>
+
+        <article class="card proyecto-card" data-category="cloud">
+          <span class="badge">Sistemas Cloud</span>
+          <h3>Logística Buenos Aires</h3>
+          <p>Sistema en la nube para seguimiento satelital de flotas de transporte.</p>
+        </article>
+
+        <article class="card proyecto-card" data-category="mobile">
+          <span class="badge">App Móvil</span>
+          <h3>Guía Turística Bahiense</h3>
+          <p>App offline con mapas interactivos, rutas gastronómicas y eventos culturales.</p>
+        </article>
+
+        <article class="card proyecto-card" data-category="cloud">
+          <span class="badge">Sistemas Cloud</span>
+          <h3>AgroData Analytics</h3>
+          <p>Dashboard de análisis climático y control de riego automatizado para productores.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Soluciones Digitales ND Software Studio. Todos los derechos reservados.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
